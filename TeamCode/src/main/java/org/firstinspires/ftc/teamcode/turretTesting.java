@@ -16,7 +16,7 @@ public class turretTesting extends OpMode {
 
     @Override
     public void init() {
-        aprilTagWebcam.init(hardwareMap, String.valueOf(telemetry));
+        aprilTagWebcam.init(hardwareMap, telemetry);
         turret.init(hardwareMap);
         telemetry.addLine("Init complete");
     }
